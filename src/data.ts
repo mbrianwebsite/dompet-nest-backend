@@ -10,7 +10,7 @@ interface Data {
     amount: number;
     created_at: Date;
     updated_at: Date;
-    type: string;
+    type: ReportType;
   }[];
 }
 
