@@ -43,7 +43,11 @@ export class AppService {
       (report) => report.id === reportToUpdate.id,
     );
 
-    data.report[reportIndex] = { ...data.report[reportIndex], ...body };
+    data.report[reportIndex] = {
+      ...data.report[reportIndex],
+      ...body,
+      updated_at: new Date(),
+    };
     return data.report[reportIndex];
   }
 
