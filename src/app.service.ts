@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { ReportType, data } from './data';
 import { v4 as uuid } from 'uuid';
 
-interface Report {
+export interface Report {
   amount: number;
   source: string;
 }
